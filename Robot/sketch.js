@@ -11,8 +11,9 @@ function setup() {
 }
 
 function draw() {
+  background(0);
 //This line means that a shape or shapes will be drawn
-  translate(mouseX, mouseY);
+  translate(mouseX-266, mouseY-257);
 //This line means wherever the mouse is the shape will move
 
   //Neck
