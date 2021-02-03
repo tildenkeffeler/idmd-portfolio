@@ -1,9 +1,10 @@
 
 var x = 25;
 var dir = 1;
+var size = 50;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(300, 200);
   background(120, 200, 255);
 }
 
@@ -11,9 +12,9 @@ function draw() {
   background(120, 200, 255);
   noStroke();
   fill(R, G, B);
-  ellipse(x, 100, 50, 50);
+  ellipse(x, 100, size, size);
   
-  if (x > 275 || x < 25) {
+  if (x > width-size/2 || x < size/2) {
     var R = random(255);
     var G = random(255);
     var B = random(255);
